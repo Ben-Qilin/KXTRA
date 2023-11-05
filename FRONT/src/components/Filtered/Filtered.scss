@@ -1,0 +1,40 @@
+@use '../App/mixin.scss';
+@use '../App/vars.scss';
+
+    .section__categories {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+
+        background-color: vars.$background_grey;
+        margin-bottom: 0.5rem;
+    }
+
+    .section__catList {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .section__catElement {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    // .section__catImg {
+    //     width: 100%;
+    // }

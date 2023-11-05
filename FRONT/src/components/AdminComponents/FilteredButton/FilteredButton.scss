@@ -1,0 +1,100 @@
+@use '../../App/mixin.scss';
+@use '../../App/vars.scss';
+
+.filter__container {
+    background-color: vars.$background_grey;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+    color: vars.$font_blue;
+
+    .form__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+
+        @include mixin.smallTablets {
+            flex-direction: row;
+            gap: 6rem;
+            justify-content: center;
+        }
+    }
+
+    .form__line {
+        border-right: 2px solid vars.$font_blue;
+        height: 8rem;
+    }
+
+    .form__label {
+        font-size: 1.5rem;
+    }
+
+    .form__input {
+        border: none;
+        background-color: vars.$background_grey;
+        border-bottom: 1px solid vars.$font_orange;
+        width: 100%;
+    }
+
+    .form__button {
+        font-weight: bold;
+        color: vars.$font_grey;
+        background-color: vars.$background_blue;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        border: none;
+        margin-top: 0.5rem;
+        cursor: pointer;
+    }
+
+    .form__paragraphe {
+        font-size: 1.2rem;
+        text-decoration: underline;
+        margin-top: 1rem;
+    }
+
+    .form__result{
+        color: vars.$font_blue;
+        gap: 1rem;
+    }
+
+    .from__resultButton {
+        font-weight: bold;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: vars.$font_orange;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.title__container {
+    display: flex;
+    justify-content: center;
+
+    .title__title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .title__subtitle {
+        color: vars.$font_orange;
+    }
+}
+
+.filterForm__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.categoryForm__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}

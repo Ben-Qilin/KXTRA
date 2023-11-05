@@ -1,0 +1,52 @@
+@use '../../App/mixin.scss';
+@use '../../App/vars.scss';
+
+.adminButton__container {
+    background-color: vars.$background_grey;
+    margin: 0.5rem 0;
+    border: 1px solid black;
+    padding: 3rem 3.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .adminButton__title {
+        color: vars.$font_blue;
+        font-weight: bold;
+        font-size: 2rem;
+        font-family: sans-serif;
+    }
+
+    .adminButton__subtitle{
+        color: vars.$font_orange;
+    }
+
+    .adminButton__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    .adminButton__link {
+        width: 60%;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        color: vars.$font_grey;
+        background-color: vars.$background_blue;
+        margin: 1rem 0;
+        padding: 2rem;
+        box-sizing: border-box;
+        border-radius: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adminButton__linkName{
+        color: vars.$font_orange;
+    }
+}

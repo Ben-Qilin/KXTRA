@@ -1,0 +1,79 @@
+@use '../App/mixin.scss';
+@use '../App/vars.scss';
+
+.ReactModal__Content {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-sizing: border-box;
+
+    @include mixin.smallTablets {
+        width: 60%;
+        height: 100%;
+    }
+}
+
+.Modale__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: vars.$background_grey;
+    padding: 1rem;
+    color: vars.$font_blue;
+    font-family: sans-serif;
+    position: absolute 0;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    // bottom: 0;
+}
+
+.Modale__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: vars.$font_blue;
+}
+
+.Modale__input {
+    border: none;
+    background-color: vars.$background_grey;
+    border-bottom: 1px solid vars.$font_orange;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.Modale__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    @include mixin.smallTablets {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.Modale__button{
+    color: vars.$font_orange;
+    margin-top: 2rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-weight: bold;
+    background-color: vars.$background_blue;
+
+}
+
+.Modale__buttonContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}

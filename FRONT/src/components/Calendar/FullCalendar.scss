@@ -1,0 +1,157 @@
+@use '../App/mixin.scss';
+@use '../App/vars.scss';
+
+.calendar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: flex-start;
+    border-radius: 1rem;
+    background-color: vars.$background_grey;
+    margin-bottom: 0.5rem;
+    padding: 2.5rem;
+    color: vars.$font_blue;
+    font-family: sans-serif;
+
+    .calendar__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calendar__title {
+        font-size: 3rem;
+    }
+
+    .calendar__subtitle {
+        color: vars.$font_orange;
+        width: 10%;
+    }
+
+    .calendar__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 1rem 1rem;
+        background-color: vars.$background_blue;
+        color: vars.$font_orange;
+        font-weight: 600;
+        border-radius: 5rem;
+        cursor: pointer;
+    }
+
+    .calendar__button:hover {
+        background-color: vars.$font_orange;
+        color: vars.$background_blue;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .calendar__calendarContainer {
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        // justify-content: flex-start;
+    }
+}
+
+.fc-day {
+    background-color: vars.$calendar_color;
+}
+
+.fc-daygrid-day-number {
+    color: vars.$calendar_font;
+    position: relative;
+    top: -20px;
+    right: -15px;
+}
+
+
+.fc-daygrid-day-frame {
+    border: 2px solid black;
+    padding: 1.8rem;
+}
+
+.fc-day-today {
+    background-color: vars.$background_grey !important;
+}
+
+.fc-toolbar-title {
+    color: vars.$font_blue;
+}
+.fc-toolbar-title::first-letter{
+    text-transform: capitalize;
+}
+
+.fc-toolbar .fc-center h2 {
+    color: vars.$calendar_font !important;
+}
+
+.fc-button {
+    background-color: vars.$background_blue;
+}
+
+.fc-daygrid-week-number {
+    background-color: rgba(128, 128, 128, 0.415) !important;
+    /* Remplacez cette couleur par celle de votre choix */
+    color: vars.$calendar_font !important;
+    /* Couleur du texte */
+    font-weight: 300;
+    margin: 0.6rem 0 0 0.6rem;
+}
+
+.fc-col-header-cell-cushion{
+    color: vars.$calendar_font;
+}
+.fc-col-header-cell-cushion::first-letter {
+    text-transform: capitalize;
+}
+
+.fc-scrollgrid-sync-inner {
+    border: 1px solid rgba(0, 0, 0, 0.388);
+}
+
+.fc-today-button{
+    border: 2px solid black;
+    background-color: vars.$background_blue !important;
+    color: vars.$font_orange !important;
+    text-transform: uppercase !important;
+}
+
+.fc-prev-button, .fc-next-button{
+    background-color: vars.$background_blue !important;
+}
+
+.fc-icon-chevron-left, .fc-icon-chevron-right{
+    color: vars.$font_orange !important;
+}
+
+// couleur des bande de réservations
+
+//! Créer fonction pour disponibilité couleur !
+// // disponible
+// .fc-event-start, .fc-event-end{
+//     background-color: rgba(6, 109, 6, 0.643);
+//     border: none;
+// }
+
+// // pas vraiment disponible
+// .fc-event-future{
+//     color: vars.$calendar_font;
+//     background-color: rgba(255, 166, 0, 0.68);
+// }
+
+// //indisponible
+// fc-h-event{
+//     background-color: rgba(255, 0, 0, 0.597);
+// }
+
+// couleur de l'heure
+.fc-event-time{
+    color: vars.$calendar_font;
+}
+

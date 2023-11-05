@@ -1,0 +1,105 @@
+@use '../../App/mixin.scss';
+@import '../../App/vars.scss';
+
+
+.addService {
+    position: relative;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    &__btn {
+        border: 1px solid black;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: $background_blue;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        color: $font_orange;
+        font-weight: bold;
+    }
+
+    &__title span {
+        color: $background_blue;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    &__form fieldset{
+        border: 1px solid black;
+        padding: 1rem;
+        background-color: $background_blue ;
+        border-radius: 0.5rem;
+    }
+    &__form fieldset label{
+        color: white;
+        font-size: 1.2rem;
+    }
+    &__form fieldset input{
+        background-color: $background_blue ;
+        border: none;
+        border-bottom: 2px solid $font_orange;
+        border-left: 2px solid $font_orange;
+        border-bottom-left-radius: 0.7rem;
+        color: white;
+        padding: 0.5rem;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+   select {
+    border-radius: 1rem;
+    padding: 0.5rem;
+   }
+   textarea {
+    border-radius: 0.5rem;
+   }
+
+    &__form fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__form fieldset legend {
+        margin-bottom: 1rem;
+    }
+
+    &__boxDispo {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+@include mixin.largeTablet {
+    &__form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+    }
+    &__box {
+        height: 100%;
+        width: 45% ;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+    
+}

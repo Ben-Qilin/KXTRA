@@ -1,0 +1,244 @@
+@use '../../app/mixin.scss';
+@use '../../app/vars.scss';
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.auth__container {
+    display: flex;
+    justify-content: center;
+    background-color: vars.$background_grey;
+    color: vars.$font_blue;
+    border: 1px solid black;
+    padding: 4rem ;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+
+    .auth__title__container {
+        padding-bottom: 2rem;
+    }
+
+    .auth__bloc {
+        width: 100%;
+        line-height: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .auth__title {
+        font-size: 3rem;
+    }
+
+    .auth__title__color {
+        color: vars.$font_orange;
+    }
+
+    .auth__name__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .auth__firstname__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .auth__lastname__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .auth__info__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .line__color {
+        border: 1px solid vars.$font_blue;
+        margin: 1rem;
+    }
+
+    .auth__label {
+        font-size: 1rem;
+        font-family: sans-serif;
+        letter-spacing: 0.3rem;
+        padding-top: 1rem;
+    }
+
+    .auth__input {
+        border: none;
+        background-color: vars.$background_grey;
+        border-bottom: 1px solid vars.$font_orange;
+        width: 100%;
+    }
+
+    .auth__password {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .auth__password__logo {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    // Partie radio inscripiton
+
+    .auth__radio__container {
+        padding: 1rem 0 1rem 0;
+        line-height: normal;
+        width: 80%;
+        gap: 1rem;
+    }
+
+    .auth__radio {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .auth__radio__title {
+        font-family: sans-serif;
+    }
+
+    .auth__radio__subtitle {
+        font-weight: bold;
+    }
+
+    .auth__button {
+        text-align: center;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+        color: vars.$font_grey;
+        background-color: vars.$background_blue;
+        padding:1rem 2rem ;
+        border: 2px solid rgba(0, 0, 0, 0.651);
+        border-radius: 2rem;
+        border: none;
+        margin-top: 1rem;
+        height: 10%;
+        float: right;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .auth__button:active {
+        box-shadow: none;
+        color: vars.$background_blue;
+        background-color: vars.$font_orange;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .auth__button__container {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .auth__text {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+.logoLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-top: 2rem;
+
+    .logoLink__img {
+        height: 2rem;
+        width: 2rem;
+        background-color: vars.$background_grey;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 5px black;
+    }
+}
+
+
+.button__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .button__conexion {
+        text-align: center;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+        color: vars.$font_grey;
+        background-color: vars.$background_blue;
+        padding:1rem 2rem ;
+        border: 2px solid rgba(0, 0, 0, 0.651);
+        border-radius: 2rem;
+        border: none;
+        margin-top: 1rem;
+        float: right;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .button__conexion:active {
+        box-shadow: none;
+        color: vars.$background_blue;
+        background-color: vars.$font_orange;
+        transition: all 0.1s ease-in-out;
+    }
+}
+
+
+@include mixin.smallTablets {
+    .auth__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .auth__bloc {
+        width: 100%;
+    }
+
+    .auth__name__container {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .line__color {
+        border-right: 1px solid vars.$font_blue;
+    }
+
+    .aut__radio {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .auth__radio__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logoLink {
+        display: flex;
+        flex-direction: row;
+    }
+.button__container{
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+}

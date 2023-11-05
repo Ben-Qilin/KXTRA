@@ -1,0 +1,30 @@
+@mixin smallDevices {
+    @media screen and (min-width: 481px) {
+      @content;
+    }
+  }
+  
+  @mixin smallTablets {
+    @media screen and (min-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin largeTablet {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+  }
+
+  @mixin xtraScreen {
+    @media screen and (min-width: 1920px) {
+        @content;
+    }
+
+  }

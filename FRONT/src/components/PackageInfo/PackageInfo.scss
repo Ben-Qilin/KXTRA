@@ -1,0 +1,19 @@
+@use '../../components/App/mixin.scss';
+@use '../../components/App/vars.scss';
+
+.Info__container{
+    margin: 0.5rem 0;
+    background-color: vars.$background_blue;
+    color: vars.$font_grey;
+    border: 1px solid black;
+    padding: 3rem 3.5rem ;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    .Info__map{
+        float: right;
+    }
+
+}

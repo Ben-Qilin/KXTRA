@@ -1,0 +1,248 @@
+ @use '../../App/mixin.scss';
+ @use '../../App/vars.scss';
+ 
+.card1 {
+    box-sizing: border-box;
+    padding: 0.2rem;
+    position: absolute;
+    top: 30%;
+    left: 50%; 
+    z-index: 100;
+    transform: rotate(15deg);// Centrer verticalement
+    // right: 0.2rem;
+    width: 30%; // Ajustez en fonction de vos besoins
+    height: 45%; // Ajustez en fonction de vos besoins
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    background-color: vars.$background_grey;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translateY(-50%),rotate(25deg); 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: vars.$background_grey;
+  
+
+    &__containerImg {
+        height: 55%;
+        width: 100%;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+
+      
+    }
+    &__image {
+    object-position: center;
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    height: 100%;
+        }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-top: 0.2rem;
+        //
+        text-align: start;
+        
+       
+    } 
+    &__title {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    &__localisation {
+            margin: 0;
+            color: #777;
+            text-align: start;
+            height: 15%;
+            
+        }
+    &__containerAction {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items:end;
+    }
+    &__btn {
+        text-align: center;
+        width: 50%;
+        border-radius: 0.5rem;
+        border: 1px solid gray;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 0.5rem;
+        color:  vars.$font_orange;
+        background-color: vars.$background_blue;
+        padding:0.2rem 0.2rem;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        font-size: 0;
+        
+    }
+    &__btn:active {
+        
+        background-color: white;
+        border:1px solid vars.$background_blue;
+        color: vars.$background_blue;
+    }
+    &__rate {
+        
+        width: 1rem;
+    }
+    
+    
+    
+}
+
+.card2 {
+    box-sizing: border-box;
+    padding: 0.2rem;
+    width: 12rem; // Ajustez en fonction de vos besoins
+    height: 17rem; // Ajustez en fonction de vos besoins
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: vars.$background_grey;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    &__containerImg {
+        height: 55%;
+        width: 100%;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+    &__image {
+            object-position: center;
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    height: 100%;
+        }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.2rem;
+        gap: 2rem;
+        text-align: start;
+        
+    }
+    &__title {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        &__localisation {
+            margin: 0;
+            color: #777;
+            height: 15%;
+        }
+    &__containerAction {
+        height: 20%;
+        display: flex;
+        justify-content: end;
+        align-items:end;
+        width: 100%;
+    }
+    &__btn {
+        color: vars.$font_orange;
+        width: 100%;
+        border-radius: 0.5rem;
+        border: 1px solid gray;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        background-color: vars.$background_blue;
+        padding:0.2rem 0.2rem;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        font-size: 1.2rem;
+        height: 1rem;
+    }
+    &__btn:active {
+        
+        background-color: white;
+        border:1px solid vars.$background_blue;
+        color: vars.$background_blue;
+    }
+    &__rate {
+        display: inline;
+        width: 1rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include mixin.smallDevices {
+    .card1 {
+        // height: 55%;
+        // width: 25%;
+        height: 15rem;
+        width: 11rem;
+        
+        &__containerImg {
+            height: 60%;
+            
+        }
+        &__btn {
+            font-size: 1.2rem;
+            width: 80%;
+            align-self: center;
+        }
+    }
+
+}
+@include mixin.smallTablets {
+    .card1 {
+        height: 75%;
+        width: 25%;
+        position: absolute;
+        right: 1rem;
+        left: unset;
+        transform: rotate(0deg);
+        top: 15%;
+
+        
+    }
+}
+@include mixin.largeTablet {
+    .card1 {
+        height: 75%;
+        width: 20%;
+        right: 2rem;
+    }
+}
+@include mixin.desktop {
+    .card1 {
+        height: 75%;
+        width: 15%;
+        right: 2rem;
+    }
+}
+@include mixin.xtraScreen {
+    .card1 {
+        height: 75%;
+        width: 10%;
+        right: 2rem;
+    }
+}
+
+
+

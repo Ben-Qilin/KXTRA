@@ -1,0 +1,66 @@
+@use '../../components/App/mixin.scss';
+@use '../../components/App/vars.scss';
+
+.confirmResa {
+    border-radius: 1rem;
+    background-color: vars.$background_grey;
+    color: vars.$font_blue;
+    font-family: sans-serif;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+
+    &__title {
+        font-size: 2.5rem;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__container p {
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    &__container button {
+        background-color: vars.$background_blue;
+        color: vars.$font_grey;
+        padding: 0.5rem;
+        border-radius: 5rem;
+        cursor: pointer;
+    }
+
+    &__container a {
+        text-decoration: underline;
+    }
+
+    &__img {
+        width: 15%;
+    }
+
+    &__subtitle {
+        color: vars.$font_orange;
+    }
+
+    &__confirm {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__paragraph {
+        line-height: 2rem;
+    }
+
+    &__link {
+        color: vars.$font_orange;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,193 @@
+@use '../../components/App/mixin.scss';
+@use '../../components/App/vars.scss';
+
+.GridChoice__container {
+    background-color: vars.$background_grey;
+    color: vars.$font_blue;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    gap: 1rem;
+
+    .Text__title {
+        font-size: 3rem;
+        color: vars.$font_orange;
+        margin-bottom: 2rem;
+    }
+
+    .Text__paragraph {
+        margin-bottom: 20px;
+    }
+
+    .Text__list {
+        list-style-type: disc;
+        margin-left: 40px;
+    }
+
+    .Text__button {
+        margin-top: 2rem;
+        margin-left: 5rem;
+        width: auto;
+        padding: 0.5rem;
+        border-radius: 5rem;
+        background-color: vars.$background_blue;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.PicMap__container{
+    background-color: vars.$background_blue;
+    
+    border: 1px solid black;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    
+    margin-bottom: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    
+    gap: 1rem;
+}
+.PicMap__container p {
+    color: white;
+    font-size: 1.2rem;
+}
+.PicMap__pkg {
+    font-size: 3rem;
+
+}
+.PicMap__layoutImg {
+    background-color: rgba(255, 255, 255, 0.206);
+border: 1px solid white;
+height: 100%;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+align-items: center;
+padding: 1rem;
+border-radius: 1rem;
+margin-bottom: 2rem;
+
+}
+.PicMap__price{
+    text-align: end;
+    font-size: 3rem !important;
+    height: 2rem;
+
+}
+
+.PicMap__img1 {
+    height: 100%;
+    width: 100%;
+}
+.PicMap__Img {
+    border: 1px solid white;
+    width: 100%;
+    
+    
+    background-color: white;
+    border-radius: 0.5rem;
+}
+.PicMap__sublayoutImg   {
+    border: 1px solid rgba(255, 255, 255, 0.447);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 0.5rem;
+    height: 100%;
+    }
+.PicMap__sublayoutImg {
+    display: grid; 
+  grid-auto-flow: row dense; 
+  grid-template-columns: 0.6fr 0.6fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 16px 16px; 
+  grid-template-areas: 
+    "ccc ccc"
+    "vvv bbb";
+    padding: 0.5rem; 
+}
+.ccc { grid-area: ccc; }
+      .vvv { grid-area: vvv; }
+      .bbb { grid-area: bbb; }
+    
+.PicMap__img1 {
+    border: 1px solid white;
+    
+    object-position: center;
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.PicMap__map {
+    
+    width: 100%;
+    height: 100%;
+}
+.PicMap__institution h2 {
+    color: white;
+    font-size: 2.5rem;
+    color:vars.$font_orange;
+}
+.PicMap__institution p {
+    color: white;
+    font-size: 1.5rem;
+}
+@include mixin.smallDevices {
+    .PicMap__layoutImg {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .PicMap__map {
+       height: 14rem;
+       width: 45%;
+    }
+    
+    .PicMap__img1 {
+        
+        top: 0;
+        
+        height: 100%;
+        width: 100%;
+        
+    }
+    .PicMap__sublayoutImg {
+        width: 45%;
+        display: grid; 
+        grid-auto-flow: row dense; 
+        grid-template-columns: 0.7fr 0.5fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 16px 16px; 
+        grid-template-areas: 
+          "ccc vvv"
+          "ccc bbb"; 
+          padding: rem;
+      }
+      
+      .ccc { grid-area: ccc; }
+      .vvv { grid-area: vvv; }
+      .bbb { grid-area: bbb; }
+}
+@include mixin.desktop {
+    .GridChoice__container {
+        padding: 5rem;
+        
+    }
+    .PicMap__container{
+        padding: 5rem;
+        
+    }
+    
+
+}

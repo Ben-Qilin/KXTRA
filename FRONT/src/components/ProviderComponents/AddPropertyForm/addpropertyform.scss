@@ -1,0 +1,97 @@
+@use '../../App/mixin.scss';
+@import '../../App/vars.scss';
+.addproperty {
+    position: relative;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+    &__title {
+        font-size: 2.5rem;
+        color: $font_orange;
+        font-weight: bold;
+    }
+    &__title span {
+        color: $background_blue;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+    &__form fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    &__buttonSubmit {
+        border: 1px solid black;
+        padding:  0.5rem 3rem;
+        background-color: $background_blue;
+        color: $font_orange;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+    }
+    &__buttonSubmit:active { 
+        background-color: $font_orange;
+        color: $background_blue;
+    }
+
+    .addproperty__container1{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 70%;
+    }
+    .addproperty__container2{
+       display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 70%;
+        
+            }
+}
+.addproperty__form fieldset {
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: $background_blue ;
+    border-radius: 0.5rem;
+}
+.addproperty__form fieldset label {
+    color: white;
+    font-size: 1.2rem;
+}
+.addproperty__form fieldset input {
+    background-color: $background_blue ;
+    border: none;
+    border-bottom: 2px solid $font_orange;
+    border-left: 2px solid $font_orange;
+    border-bottom-left-radius: 0.7rem;
+    color: white;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 767px) {
+    .addproperty__form {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 2rem;
+        width: 100%;
+    }
+    .addproperty__container1{
+        width: 50%;
+    }
+    .addproperty__container2{
+        width: 50%;
+    }
+  }

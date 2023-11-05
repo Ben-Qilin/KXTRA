@@ -1,0 +1,36 @@
+@use '../App/mixin.scss';
+@use '../App/vars.scss';
+
+.email__container{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+
+    .email__title {
+        font-size: 2rem;
+    }
+
+    .email__subtitle{
+        color: vars.$font_orange;
+    }
+
+    .email__img {
+        width: 15%;
+        padding: 1rem;
+    }
+
+    .email__text {
+        font-size: 1.5rem;
+    }
+
+    .email__link {
+        color: vars.$font_orange;
+    }
+}

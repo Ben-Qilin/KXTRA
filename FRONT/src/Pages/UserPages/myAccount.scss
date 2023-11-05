@@ -1,0 +1,43 @@
+@use '../../components/App/vars.scss';
+.myAccount {
+    
+    background-color: white;
+    padding: 3rem 2rem ;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    &__boxTitle {
+    height: 20vh;
+
+    }
+    &__title {
+        font-size: 2rem;
+    }
+    &__boxButton {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        height: 50vh;
+    }
+    &__button {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        border: 1px solid gray;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        background-color: vars.$background_blue;
+    }
+    &__button:hover {
+        transform: scale(1.2);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    &__button:active {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,10 @@
+@use '../../components/App/mixin.scss';
+@use '../../components/App/vars.scss';
+
+.carrousel__container{
+    width: 50%;
+
+    .carrousel_pictures{
+        width: 50%;
+    }
+}

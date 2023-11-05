@@ -1,0 +1,11 @@
+@import '../../App/vars.scss';
+.buttonBack {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    rotate: 90deg;
+    color: $background_blue;
+}

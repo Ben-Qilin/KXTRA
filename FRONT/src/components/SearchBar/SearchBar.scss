@@ -1,0 +1,24 @@
+@use '../../components/App/mixin.scss';
+@use '../../components/App/vars.scss';
+
+
+.SearchBar__container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+    height: 1.5rem;
+    width: 50%;
+    
+}
+
+.SearchBar__input{
+    border: none;
+    background-color: vars.$background_grey;
+    border-bottom: 1px solid vars.$font_orange;
+    width: 100%;
+}
+
+.SearchBar__img {
+    height: 1.5rem;
+    width: 1.5rem;
+}

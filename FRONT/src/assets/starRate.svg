@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Calque-1" vectornator:layerName="Calque 1">
+<g opacity="1" vectornator:layerName="Star">
+<path d="M512 846.149L761.881 1004C801.307 1028.9 849.935 991.896 839.475 944.998L773.145 647.451L993.96 447.227C1028.76 415.699 1010.15 355.852 964.29 351.799L673.625 326.008L559.924 45.1996C541.972 0.933456 482.028 0.933456 464.076 45.1996L350.375 326.008L59.7101 351.799C13.8475 355.852-4.75901 415.699 30.0403 447.227L250.855 647.451L184.525 944.998C174.065 991.896 222.693 1028.9 262.119 1004L512 846.149Z" fill="#efc800" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
+</g>
+</g>
+<g id="Calque-2" vectornator:layerName="Calque 2"/>
+</svg>

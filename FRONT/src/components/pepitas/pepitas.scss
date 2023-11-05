@@ -1,0 +1,37 @@
+@use '../App/mixin.scss';
+@use '../App/vars.scss';
+
+.pepites {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: vars.$background_grey;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+
+&__title {
+    font-family: tinos, sans-serif;
+    font-size: 3rem;
+}
+&__title span {
+     color: vars.$font_orange;
+}
+
+&__cardContainer {
+    display: flex;
+    flex-direction: column;
+   gap: 2rem;
+    align-items: center;
+}
+}
+
+@include mixin.smallDevices {
+    .pepites__cardContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

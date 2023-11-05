@@ -1,0 +1,36 @@
+@use '../../components/App/mixin.scss';
+@use '../../components/App/vars.scss';
+
+.purchase__container{
+    padding: 1rem 2rem;
+    height: 40%;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    background-color: vars.$background_grey;
+    box-sizing: border-box;
+
+    .purchase__title{
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .purchase__subtitle{
+        color: vars.$font_orange;
+    }
+}
+
+.componants__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@include mixin.smallTablets{
+    .componants__container{
+        display: flex;
+        flex-direction: row;
+       align-content: center;
+       gap: 1rem;
+    }
+}

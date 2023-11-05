@@ -1,0 +1,79 @@
+@use '../../App/mixin.scss';
+@use '../../App/vars.scss';
+
+.ProviderForm__container {
+    position: relative;
+    background-color: vars.$background_grey;
+    color: vars.$font_blue;
+    border: 1px solid black;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ProviderForm__title{
+        font-size: 3rem;
+        font-family: sans-serif;
+        padding-bottom: 2rem;
+    }
+    .ProviderForm__subtitle{
+        color: vars.$font_orange;
+    }
+    .Provider__formSection{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    .ProviderForm__nameContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        // width: 100%;
+    }
+    .ProviderForm__firstname{
+        display: flex;
+        flex-direction: column;
+    }
+    .ProviderForm__lastname{
+        display: flex;
+        flex-direction: column;
+    }
+    .ProviderForm__label{
+        font-size: 1rem;
+        font-family: sans-serif;
+        letter-spacing: 0.3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .ProviderForm__input{
+        border: none;
+        background-color: vars.$background_grey;
+        border-bottom: 1px solid vars.$font_orange;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .ProviderForm__button{
+        color: white;
+        font-size: 1rem;
+        background-color: vars.$background_blue;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        border-radius: 5rem;
+        width: 30%;
+        cursor: pointer;
+     }
+     .ProviderForm__buttonContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+    @include mixin.smallTablets {
+        .ProviderForm__nameContainer{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}

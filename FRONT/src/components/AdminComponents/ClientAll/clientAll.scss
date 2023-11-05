@@ -1,0 +1,169 @@
+@use '../../App/mixin.scss';
+
+.clientAll__section {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 3rem 1rem;
+    margin-bottom: 0.5rem;
+    min-height: 70vh;
+    
+}
+.clientAll__section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+}
+.clientAll__accordionContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.infosClient {
+    
+    border: 1px solid gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+
+    &__containerTop {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    &__boxTop {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        
+    }
+
+    &__nameBox,
+    &__surnameBox,
+    &__mailBox,
+    &__phoneBox {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        span {
+            width: 30%;
+        }
+
+        p {
+            width: 70%;
+        }
+    }
+
+    &__buttonOC {
+        height: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &__buttonOC img {
+        height: 1rem;
+        
+    }
+
+    &__containerBottom {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+    }
+
+    &__nbrResaBox,
+    &__createdAtBox,
+    &__dateResaBox {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        span {
+            width: 70%;
+        }
+
+        p {
+            width: 30%;
+        }
+    }
+}
+
+
+@include mixin.smallTablets {
+    .clientAll__section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        
+        
+        
+        
+    }
+    .clientAll__accordionContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    
+    }
+    
+    .infosClient {
+       position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem 1rem 0 0;
+        gap: 1rem;
+        box-sizing: border-box;
+        width: 45%;
+
+         &__containerBottom {
+        position: absolute;
+        bottom: -175px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: white;
+        z-index: 9999;
+        border: 1px solid gray;
+        border-top: none;
+        border-radius: 0 0 1rem 1rem;
+        padding: 2rem 1rem;
+        
+        width: 91%;
+    }
+    }
+    
+}
+
+@include mixin.largeTablet {
+    .infosClient {
+       
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        box-sizing: border-box;
+        width: 30%; 
+    }
+}
