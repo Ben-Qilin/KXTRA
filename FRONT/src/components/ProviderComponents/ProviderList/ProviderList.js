@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import down from '../../../assets/down.svg'
 import up from '../../../assets/up.svg'
-import '../../ProviderComponents/ClientsOrders/AccordionOrder.scss'
+import '../../ProviderComponents/ClientsOrders/accordionOrder.scss'
 import { UseSignInStore } from '../../AuthLogin/signInStore';
 
 import '../ProviderList/ProviderList.scss';
